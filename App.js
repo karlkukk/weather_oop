@@ -2,7 +2,9 @@
 const weather = new Weather('Tartu linn');
 // app UI object
 const ui = new UI();
-
+// default city
+document.addEventListener('DOMContentLoaded', drawWeather);
+// change city
 const changeBtn = document.querySelector('#w-change');
 changeBtn.addEventListener('click', changeWeather);
 
